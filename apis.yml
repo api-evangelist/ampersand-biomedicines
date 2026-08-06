@@ -1,17 +1,58 @@
 aid: ampersand-biomedicines
 name: Ampersand Biomedicines
-description: 'Ampersand Biomedicines is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+description: 'Ampersand Biomedicines is a Boston-based biotechnology company founded in 2020 out of Flagship
+  Pioneering that designs programmable biologic medicines intended to act only at the site of disease. Its
+  computationally powered Address, Navigate, Determine (AND) Platform pairs a multi-omics "Address Map" of
+  healthy and diseased human tissue with high-throughput microfluidic binder generation and AI-guided binder
+  prediction to design AND-Body therapeutics, which combine a localizing element with an actuator so activity
+  is conditional on the target tissue. The company raised a $65M Series B in March 2025 from Flagship
+  Pioneering and Eli Lilly, and partners with Pioneering Medicines and Pfizer. It is a preclinical
+  therapeutics developer, not a software vendor: the computational platform is internal tooling for its own
+  drug discovery and is not offered to third parties, and the company publishes no public API, developer
+  portal, SDK, or machine-readable specification.'
+image: https://cdn.prod.website-files.com/62e1567a532ab570f765e32c/63beca5200a95d31d65346ad_Ampersand-logo-color.svg
 url: https://raw.githubusercontent.com/api-evangelist/ampersand-biomedicines/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
+x-enrichment:
+  date: '2026-08-06'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Ampersand Biomedicines is a preclinical therapeutics developer whose AND Platform is internal
+    drug-discovery tooling, not a product — the corporate site at ampersand.bio has only Science,
+    Pipeline, Team, News, Careers and Contact sections, no api/docs/developer subdomain resolves in
+    DNS, and every contract-discovery path returned 404.
+  evidence:
+  - url: https://www.ampersand.bio/
+    status: 200
+  - url: https://www.ampersand.bio/openapi.json
+    status: 404
+  - url: https://www.ampersand.bio/llms.txt
+    status: 404
+  - url: https://www.ampersand.bio/.well-known/agent-card.json
+    status: 404
+  - url: https://www.ampersand.bio/.well-known/security.txt
+    status: 404
+  checked: '2026-08-06'
 created: '2026-08-06'
 modified: '2026-08-06'
 tags:
 - Company
+- Biotechnology
+- Therapeutics
+- Drug Discovery
+- Life Sciences
+- Computational Biology
+- Precision Medicine
+- Flagship Pioneering
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +60,25 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ampersand-biomedicines-domain-security.yml
 - type: Website
+  url: https://www.ampersand.bio/
+- type: Blog
+  url: https://www.ampersand.bio/news
+- type: Contact
+  url: https://www.ampersand.bio/contact
+- type: PrivacyPolicy
+  url: https://www.ampersand.bio/privacy-policy
+- type: CookiePolicy
+  url: https://www.ampersand.bio/cookie-policy
+- type: Careers
+  url: https://www.ampersand.bio/careers
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ampersand-biomedicines
+- type: Twitter
+  url: https://twitter.com/AmpersandBio
+- type: Investor
+  url: https://www.flagshippioneering.com/companies/ampersand-biomedicines
+- type: Profile
   url: https://forgeglobal.com/ampersand-biomedicines_stock/

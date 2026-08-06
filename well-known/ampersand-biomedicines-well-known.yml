@@ -1,0 +1,43 @@
+generated: '2026-08-06'
+method: probed
+source: live probes of https://www.ampersand.bio
+host: https://www.ampersand.bio
+note: >-
+  No /.well-known/ discovery document is published on the corporate host. Recorded as
+  negative evidence from the contract-discovery pass; no WellKnown pointer is wired in
+  apis.yml because nothing was found.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /.well-known/agent-card.json
+  status: 404
+- path: /.well-known/agent.json
+  status: 404
+other_probes:
+- path: /llms.txt
+  status: 404
+- path: /openapi.json
+  status: 404
+- path: /sitemap.xml
+  status: 404
+- path: /robots.txt
+  status: 200
+  note: empty body (0 bytes)
+subdomains_resolved: []
+subdomains_probed:
+- api.ampersand.bio
+- docs.ampersand.bio
+- developer.ampersand.bio
+- dev.ampersand.bio
+- platform.ampersand.bio
+- app.ampersand.bio
+- trust.ampersand.bio
+- status.ampersand.bio
