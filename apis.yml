@@ -10,6 +10,17 @@ description: 'Ampersand Biomedicines is a Boston-based biotechnology company fou
   therapeutics developer, not a software vendor: the computational platform is internal tooling for its own
   drug discovery and is not offered to third parties, and the company publishes no public API, developer
   portal, SDK, or machine-readable specification.'
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/62e1567a532ab570f765e32c/63beca5200a95d31d65346ad_Ampersand-logo-color.svg
 url: https://raw.githubusercontent.com/api-evangelist/ampersand-biomedicines/refs/heads/main/apis.yml
 x-type: company
