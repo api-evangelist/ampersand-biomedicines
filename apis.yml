@@ -21,6 +21,18 @@ deliveryModel:
   - none
   generated: '2026-08-28'
   method: derived
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+  - security
+  generated: '2026-09-02'
+  method: derived
 image: https://cdn.prod.website-files.com/62e1567a532ab570f765e32c/63beca5200a95d31d65346ad_Ampersand-logo-color.svg
 url: https://raw.githubusercontent.com/api-evangelist/ampersand-biomedicines/refs/heads/main/apis.yml
 x-type: company
